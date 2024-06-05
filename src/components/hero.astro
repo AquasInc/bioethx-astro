@@ -1,0 +1,16 @@
+---
+import { Image, getImage } from 'astro:assets';
+import bioethxMeeting from "../../public/hero.webp";
+const heroImage = await getImage({src: bioethxMeeting, format: 'webp'});
+---
+<div class="hero" style={`background-image: url(${heroImage.src});`}>
+</div>
+
+<style>
+  .hero {
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+</style>
