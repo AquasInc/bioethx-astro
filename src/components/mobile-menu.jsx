@@ -13,7 +13,7 @@ const MobileMenu = ({ mobile, setMobile }) => (
     </li>
     <li className={navLinkItem}>
       <a
-        href="/service"
+        href="/service/overview"
         className={navLinkText}
         onClick={() => setMobile(!mobile)}
       >

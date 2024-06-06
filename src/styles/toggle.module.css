@@ -18,10 +18,6 @@
   z-index: 1;
 }
 
-.active {
-  transform: rotate(45deg);
-}
-
 @media (min-width: 769px) {
   .toggleBtn {
     display: none;

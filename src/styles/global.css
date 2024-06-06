@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .mainArticle img {
+    width: 100%;
+  }
+}

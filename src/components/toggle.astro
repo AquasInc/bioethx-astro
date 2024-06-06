@@ -1,0 +1,29 @@
+---
+import { toggleBtn } from "../styles/toggle.module.css";
+---
+<button id="toggle" class={toggleBtn}>
+  <span>+</span>
+</button>
+
+<style>
+.active {
+  transform: rotate(45deg);
+}
+</style>
+
+<script>
+  const toggle = document.querySelector('#toggle');
+
+  function handleClick() {
+    const x = document.getElementById('sidebar');
+    if (x.style.display === "block") {
+        toggle.classList.remove("active");
+        x.style.display = "none";
+      } else {
+        toggle.classList.add("active");
+        x.style.display = "block";
+      }
+    }
+
+  toggle.addEventListener('click', handleClick)
+</script>
