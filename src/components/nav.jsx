@@ -4,7 +4,6 @@ import bioethxLogo from "../../public/bioethx.png";
 import {
   flexContainer,
   navbar,
-  logo,
   navLinks,
   navLinkItem,
   navLinkText,
@@ -28,7 +27,6 @@ const Nav = () => {
             src="/bioethx.png"
             width={80}
             alt="BioEthx logo"
-            className={logo}
           />
         </a>
         <ul className={navLinks}>
