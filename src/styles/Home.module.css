@@ -53,6 +53,10 @@
   text-align: center;
 }
 
+.ai {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .about,
   .about h1 {
