@@ -42,7 +42,7 @@ const Footer = () => (
             Terms & Conditions
           </a>
         </p>
-        <p>&copy; 2022 BioEthx™</p>
+        <p>&copy; {new Date().getFullYear()} BioEthx™</p>
       </div>
       <div className={column}>
         <p>
