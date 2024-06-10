@@ -41,6 +41,11 @@ const Nav = () => {
             </a>
           </li>
           <li className={navLinkItem}>
+            <a href="/events/iccec2024" className={navLinkText}>
+              ICCEC 2024
+            </a>
+          </li>
+          <li className={navLinkItem}>
             <a href="/register" className={navLinkText}>
               Register
             </a>

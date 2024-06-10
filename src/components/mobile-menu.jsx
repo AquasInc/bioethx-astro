@@ -22,6 +22,15 @@ const MobileMenu = ({ mobile, setMobile }) => (
     </li>
     <li className={navLinkItem}>
       <a
+        href="/events/iccec2024"
+        className={navLinkText}
+        onClick={() => setMobile(!mobile)}
+      >
+        ICCEC 2024
+      </a>
+    </li>
+    <li className={navLinkItem}>
+      <a
         href="/register"
         className={navLinkText}
         onClick={() => setMobile(!mobile)}

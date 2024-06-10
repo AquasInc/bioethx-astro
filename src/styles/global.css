@@ -1,5 +1,32 @@
+.events {
+  width: 85%;
+  margin: auto;
+}
+.events h1 {
+  font-size: 2rem;
+  color: dodgerblue;
+  text-align: center;
+}
+
+.events img {
+  width: 100%;
+}
+
+.events hr {
+  border: none;
+  height: 4rem;
+}
+
 @media (max-width: 768px) {
   .mainArticle img {
     width: 100%;
+  }
+
+  .events {
+    width: 100%;
+  }
+
+  .events hr {
+    height: 0rem;
   }
 }
