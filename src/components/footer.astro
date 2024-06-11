@@ -1,0 +1,120 @@
+---
+---
+<footer class="footer">
+  <div class='container'>
+    <div class='column'>
+      <p>
+        <strong>Email:</strong>
+        <br />
+        <a href="mailto:info@bioethx.org" class='linkText'>
+          info@bioethx.org
+        </a>
+      </p>
+      <p>
+        <strong>Phone:</strong>
+        <br />
+        (301) 332-2686
+      </p>
+      <p>
+        <strong>Address:</strong>
+        <br />
+        10400 Connecticut Avenue
+        <br />
+        Suite 310
+        <br />
+        Kensington, MD 20895
+      </p>
+    </div>
+    <div class='column'>
+      <p>
+        <a href="/policy" class='linkText'>
+          Privacy Policy
+        </a>
+      </p>
+      <p>
+        <a href="/terms" class='linkText'>
+          Terms & Conditions
+        </a>
+      </p>
+      <p>&copy; {new Date().getFullYear()} BioEthx™</p>
+    </div>
+    <div class='column'>
+      <p>
+        <a href="http://bioethxcafe.com/" class='linkText'>
+          BioEthx Cafe
+        </a>
+        <br />
+      </p>
+      <p>
+        <strong>Print & Go Information</strong>
+        <br />
+        <a
+          href="/BioEthxInfoSheet.pdf"
+          target="_blank"
+          class='linkText'
+        >
+          BioEthx Information Sheet
+        </a>
+        <br />
+        <a
+          href="/BenefitsAtAGlance.pdf"
+          target="_blank"
+          class='linkText'
+        >
+          Benefits at a glance
+        </a>
+      </p>
+      <p>
+        <strong>White Papers</strong>
+        <br />
+        <a
+          href="/ManagingHealthcareEthics.pdf"
+          target="_blank"
+          class='linkText'
+        >
+          Managing Healthcare Ethics
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    width: 100%;
+    background: #333;
+    color: #ccc;
+    padding: 1rem 0;
+  }
+
+  .container {
+    display: flex;
+    width: 85%;
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .linkText {
+    text-decoration: none;
+    color: lightskyblue;
+    font-weight: bold;
+  }
+
+  .linkText:hover {
+    text-decoration: underline;
+  }
+
+  .linkText:active {
+    color: #f4f4f4;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+</style>
