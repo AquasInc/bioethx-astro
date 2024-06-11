@@ -1,16 +1,16 @@
 ---
 import Hero from "../components/hero.astro";
-import styles from "../styles/Home.module.css";
+import "../styles/global.css";
 import Layout from '../layouts/BaseLayout.astro';
 ---
 
 <Layout title="Online Medical Ethics consult Management System">
-  <h1 className={styles.mainHeading}>
+  <h1 class="mainHeading">
 	Advancing the Practice of Healthcare Ethics
   </h1>
   <Hero />
-  <main className={styles.container}>
-	<section className={styles.about}>
+  <main class="container">
+	<section class="about">
 	  <p>
 		BioEthx™ offers the first online web service for assisting in the
 		management of medical ethics consults. Our service provides medical
@@ -114,3 +114,22 @@ import Layout from '../layouts/BaseLayout.astro';
 	</section>
   </main>
 </Layout>
+
+<style>
+.about {
+  margin-top: 3rem;
+}
+
+.about h1 {
+  margin-top: 3rem;
+  color: dodgerblue;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about,
+  .about h1 {
+    margin-top: 2.5rem;
+  }
+}
+</style>

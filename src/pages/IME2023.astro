@@ -1,19 +1,19 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/BaseLayout.astro';
-import styles from '../styles/Home.module.css';
+import '../styles/global.css';
 import aiImage from '../../public/ai.webp';
 ---
 
 <Layout title="IME 2023">
-  <div class={styles.container}>
-    <div class={styles.ime2023}>
-      <h1 class={styles.mainHeading}>
+  <div class="container">
+    <div class="ime2023">
+      <h1 class="mainHeading">
         Artificial Intelligence is an Undeniable Reality
       </h1>
-      <h2 class={styles.mainHeading}>For Bioethics Committees</h2>
+      <h2 class="mainHeading">For Bioethics Committees</h2>
       <div>
-        <Image src={aiImage}  alt="ai abstract" width="1080" class={styles.ai} />
+        <Image src={aiImage}  alt="ai abstract" width="1080" class="ai" />
       </div>
       <ul>
         <li><a href={'#abstract'}>Abstract</a></li>
@@ -71,8 +71,46 @@ import aiImage from '../../public/ai.webp';
         Regional Representative in BioEthx Group, AQUAS, Inc. (bioethx.org)
       </p>
       <div id="poster">
-        <Image class={styles.poster} src='/poster.jpg' width={1080} height={1366} alt="IME 2023 poster" />
+        <Image class="poster" src='/poster.jpg' width={1080} height={1366} alt="IME 2023 poster" />
       </div>
     </div>
   </div>
 </Layout>
+
+<style>
+.ime2023 {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.ime2023 p {
+  padding-top: 2.5rem;
+  line-height: 24px;
+}
+
+.ime2023 ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.ime2023 ul li {
+  margin: 2rem;
+}
+
+.ime2023 ul a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.poster {
+  padding-top: 6rem;
+  width: 100%;
+}
+
+.ai {
+  width: 100%;
+}
+</style>

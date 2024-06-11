@@ -1,19 +1,44 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
 import Form from "../components/form";
-import styles from "../styles/Home.module.css";
-import { twoColumnLayout, columnDiv } from "../styles/register.module.css";
+import "../styles/global.css";
 const { location } = Astro.props;
 ---
 
   <Layout title="Register">
-    <main className={styles.container}>
-      <h1 className={styles.mainHeading}>Register</h1>
-      <div className={twoColumnLayout}>
-        <div className={columnDiv}>
+    <main class="container">
+      <h1 class="mainHeading">Register</h1>
+      <div class="twoColumnLayout">
+        <div class="columnDiv">
           <h2>Please register so we can keep you up to date via email.</h2>
         </div>
         <Form />
       </div>
     </main>
   </Layout>
+
+<style>
+.twoColumnLayout {
+  background: #f4f4f4;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.columnDiv {
+  flex: 1;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .twoColumnLayout {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+</style>

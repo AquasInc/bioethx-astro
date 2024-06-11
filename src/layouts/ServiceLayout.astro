@@ -2,10 +2,9 @@
 import Layout from "../layouts/BaseLayout.astro";
 import Sidebar from "../components/sidebar.astro";
 import Toggle from "../components/toggle.astro";
-import styles from "../styles/Home.module.css";
+import "../styles/global.css";
 const features = await Astro.glob('../pages/service/*.md');
 const feature = null;
-import '../styles/global.css';
 ---
 
 <Layout title="Our Service">
@@ -14,8 +13,8 @@ import '../styles/global.css';
       features={features}
       feature={feature}
     />
-    <main class={styles.container}>
-      <h1 class={styles.mainHeading}>Service</h1>
+    <main class="container">
+      <h1 class="mainHeading">Service</h1>
       <hr class="hr" />
       <article class="mainArticle">
 	<slot />

@@ -1,3 +1,16 @@
+.container {
+  width: 85%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  flex: auto;
+}
+
+.mainHeading {
+  color: dodgerblue;
+  text-align: center;
+}
+
 .events {
   width: 85%;
   margin: auto;
@@ -18,6 +31,10 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
   .mainArticle img {
     width: 100%;
   }
