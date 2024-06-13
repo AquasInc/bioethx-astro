@@ -1,7 +1,8 @@
 ---
 layout: "../../layouts/EventsLayout.astro"
-title: "Classification"
+title: "Artificial intelligence and its potential impact on the doctor-patient-health team relationship"
 order: 4
+image: "ai-medical.png"
 ---
 # Artificial intelligence and its potential impact on the doctor-patient-health team relationship
 

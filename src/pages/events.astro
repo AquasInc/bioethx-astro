@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/BaseLayout.astro";
+import { frontmatter } from './events/iccec2024.md';
+---
+
+<Layout>
+  <div class="container">
+    <h1 class="mainHeading">{frontmatter.title}</h1>
+  </div>
+</Layout>
