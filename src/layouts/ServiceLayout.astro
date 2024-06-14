@@ -2,52 +2,25 @@
 import Layout from "../layouts/BaseLayout.astro";
 import Sidebar from "../components/sidebar.astro";
 import Toggle from "../components/toggle.astro";
-import "../styles/global.css";
 const features = await Astro.glob('../pages/service/*.md');
 const feature = null;
 ---
 
 <Layout title="Our Service">
-  <div class="articleAside">
+  <div class="sm:flex">
     <Sidebar
       features={features}
       feature={feature}
     />
-    <main class="container">
-  <h1 class="text-center text-[#1E90FF] text-3xl font-bold my-5 px-2">
-      Service
-  </h1>
-      <hr class="hr" />
-      <article class="prose w-11/12 md:max-w-full mx-auto">
+    <main class="sm:h-screen sm:overflow-y-scroll mx-auto z-0">
+      <h1 class="text-center text-sky-500 text-3xl font-bold my-5 px-2">
+	  Service
+      </h1>
+      <hr class="mx-5" />
+      <article class="prose w-11/12 max-w-screen-xl pb-5 sm:pb-20 prose-img:mx-auto md:mx-auto lg:mx-0 mx-auto">
 	<slot />
       </article>
     </main>
   </div>
   <Toggle />
 </Layout>
-
-<style>
-  .articleAside {
-    display: flex;
-    flex: auto;
-  }
-
-  .hr {
-    margin: 0 1.25rem;
-  }
-
-  .mainArticle {
-    padding: 0 1.25rem;
-    height: 85vh;
-    overflow: scroll;
-  }
-
-  @media (max-width: 768px) {
-    .mainArticle {
-      height: auto;
-    }
-    .mainArticle img {
-      width: 100%;
-    }
-  }
-</style>

@@ -1,16 +1,15 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
 import Form from "../components/form.astro";
-import "../styles/global.css";
 const { location } = Astro.props;
 ---
 
   <Layout title="Register">
-    <main class="container">
+    <main class="pb-7 sm:pb-0">
     <h1 class="text-center text-[#1E90FF] text-3xl font-bold my-5 px-2">
       Register
     </h1>
-      <div class="twoColumnLayout">
+      <div class="twoColumnLayout mx-auto w-11/12 sm:max-w-screen-xl">
         <div class="columnDiv">
           <h2>Please register so we can keep you up to date via email.</h2>
         </div>

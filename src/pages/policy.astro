@@ -1,12 +1,10 @@
 ---
-const { location } = Astro.props;
 import Layout from "../layouts/BaseLayout.astro";
-import "../styles/global.css";
 ---
 
-  <Layout title="Privacy Policy">
-    <main class="container">
-  <h1 class="text-center text-[#1E90FF] text-3xl font-bold my-5 px-2">Privacy Policy</h1>
+<Layout title="Privacy Policy">
+    <article class="prose w-11/12 md:w-10/12 max-w-screen-xl m-auto my-11">
+      <h1 class="text-center text-sky-500 text-3xl font-bold px-2">Privacy Policy</h1>
       <hr />
       <p>
         BioEthx, Inc. and its subsidiaries (collectively "BioEthx") are
@@ -274,5 +272,5 @@ import "../styles/global.css";
         Site after any change will signify and confirm your assent to those
         changes.
       </p>
-    </main>
-  </Layout>
+    </article>
+</Layout>
