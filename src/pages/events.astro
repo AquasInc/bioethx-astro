@@ -8,6 +8,6 @@ const events = await Astro.glob('../pages/events/*.md');
     Events
   </h1>
   <ul class="mx-auto px-4 min-h-96">
-    {events.map(e => <li class="my-5"><a class="text-blue-500 underline" href={e.url}>{e.frontmatter.title}</a></li>)}
+    {events.map(e => <li class="my-5"><a class="link link-info sm:link-hover" href={e.url}>{e.frontmatter.title}</a></li>)}
   </ul>
 </Layout>

@@ -4,45 +4,9 @@ const { features } = Astro.props;
 
 <aside 
   id="sidebar" 
-  class="bg-zinc-300 pt-4 sm:pt-24 pr-6 hidden w-screen h-screen z-10 sm:z-0 fixed sm:static sm:block md:w-4/12 lg:w-1/5 mx-0"
+  class="bg-zinc-300 pt-4 sm:pt-20 pr-6 hidden w-screen h-screen z-10 sm:z-0 fixed sm:static sm:block md:w-4/12 lg:w-1/5 mx-0"
 >
   <ul class="text-end">
-    {features.map((feat) => <li><a href={feat.url} class="btn">{feat.file.match(/\w+(?=.md)/)}</a></li>)}
+    {features.map((feat) => <li class="mt-4 mr-2 text-lg"><a class="link link-hover" href={feat.url}>{feat.file.match(/\w+(?=.md)/)}</a></li>)}
   </ul>			
 </aside>
-
-<style>
-.list {
-  list-style: none;
-  text-align: end;
-}
-
-.btn {
-  display: block;
-  color: black;
-  border: 0;
-  padding: 0.5rem;
-  background: none;
-  font-size: 18px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btnActive {
-  display: block;
-  color: black;
-  border: 0;
-  padding: 0.5rem;
-  background: none;
-  font-size: 18px;
-  cursor: pointer;
-  border-right: 5px solid dodgerblue;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.btn:hover,
-.btnActive:hover {
-  color: #444;
-}
-</style>
