@@ -1,10 +1,13 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
-import { frontmatter } from './events/iccec2024.md';
+const events = await Astro.glob('../pages/events/*.md');
 ---
 
 <Layout>
-  <div class="container">
-    <h1 class="mainHeading">{frontmatter.title}</h1>
-  </div>
+  <h1 class="text-center text-blue-400 text-3xl font-bold my-5 px-2">
+    Events
+  </h1>
+  <ul class="mx-auto px-4 min-h-96">
+    {events.map(e => <li class="my-5"><a class="text-blue-500 underline" href={e.url}>{e.frontmatter.title}</a></li>)}
+  </ul>
 </Layout>
