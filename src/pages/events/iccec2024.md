@@ -20,6 +20,4 @@ Digital platforms that incorporate artificial intelligence provide ethics commit
 
 The future is today. While AI can help in improving access to care and the health care team’s pool of knowledge, ethical issues still prevail and must be addressed. AI cannot replace the healthcare provider’s patient-centric approach but can help reduce patient wait times to resolve a medical concern, complementing and improving the patient-doctor relationship, ensuring ethical oversight and personalized care that doctors and healthcare teams can provide.
 
----
-
 ![ICCEC 2024 poster](/iccec2024.jpg)
