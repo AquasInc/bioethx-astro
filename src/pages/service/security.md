@@ -1,7 +1,5 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-title: "Security"
-order: 8
 ---
 
 ![security image](/security.jpg)

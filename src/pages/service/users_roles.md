@@ -1,7 +1,5 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-title: "Users and Roles"
-order: 1
 ---
 
 ![users and role image](/users-and-roles.jpg)

@@ -1,7 +1,5 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-title: "Reporting"
-order: 6
 ---
 
 ![reporting image](/reporting.jpg)

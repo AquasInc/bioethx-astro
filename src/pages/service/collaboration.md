@@ -1,7 +1,5 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-title: "Collaboration"
-order: 2
 ---
 
 ![collaboration image](/collaboration.jpg)

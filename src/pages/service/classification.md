@@ -1,7 +1,5 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-title: "Classification"
-order: 4
 ---
 
 ![classification image](/classification.jpg)

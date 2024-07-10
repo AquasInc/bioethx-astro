@@ -1,7 +1,5 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-title: "Support Tools"
-order: 7
 ---
 
 ![support tools image](/support-tools.jpg)

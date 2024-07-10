@@ -1,7 +1,5 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-title: "Workflow Guidance"
-order: 3
 ---
 
 ![worlkflow guidance image](/workflow-guidance.jpg)

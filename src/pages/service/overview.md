@@ -1,6 +1,4 @@
 ---
-title: "Overview and Features"
-order: 0
 layout: "../../layouts/ServiceLayout.astro"
 ---
 

@@ -1,7 +1,5 @@
 ---
 layout: "../../layouts/ServiceLayout.astro"
-title: "Evaluation"
-order: 5
 ---
 
 ![evaluation image](/evaluation.jpg)
