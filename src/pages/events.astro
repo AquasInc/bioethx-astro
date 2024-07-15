@@ -7,7 +7,7 @@ const events = await Astro.glob('../pages/events/*.md');
   <h1 class="text-center text-blue-400 text-3xl font-bold mt-7 px-2">
     Events
   </h1>
-  <ul class="mx-auto px-4">
+  <ul class="mx-auto px-4 lg:flex lg:gap-x-9">
     {events.map((e) => (
       <a href={e.url} class="card bg-base-100 shadow-xl max-w-prose my-11 mx-auto">
         <figure><img src={"/" + e.frontmatter.image} alt="Event Hero Image"/></figure>
